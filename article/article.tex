@@ -232,7 +232,25 @@ Fig.~\ref{cumulative_bugs} and~\ref{cumulative_comments} give a first (cumulativ
 \paragraph{Influence on the number of bug reports}
 We expect release dates to be correlated to peaks of activity on the bug tracker, in particular peaks of new bug reports. Indeed, users will generally test new releases, for instance by trying to port preexisting projects to the new version, which might lead them to find new bugs (either regressions or bugs related to new features). In Fig.~\ref{bug_nb_with_releases}, we can see that while release dates are generally correlated to peaks of new bug reports by non-developers, this is not so much the case of reports by developers. We can also notice that beta releases are often correlated to higher peaks than final releases which is not surprising given that the users who test beta versions are more likely to be ready to report bugs, and beta versions are likely to be less polished.
 
-The highest peak is in 2015, after the first beta release of version 8.5. This was the first release in more than two years and it contained five big new features (``the result of five specific long-term projects''\footnote{Quote from \url{https://coq.inria.fr/refman/credits.html##credits-version-8-5}. The next quotes are coming from the following sections of the same chapter of the Coq reference manual.}). Stabilizing these features and their (unplanned) interactions required more than a year of testing and three beta releases. The 8.5 release was both hard on developers, who found the release cycle too long, and on users, who were impacted by many compatibility issues. Consequently, a different approach was taken for the following releases: versions 8.6, 8.7 and 8.8 were ``developed on a time-based development cycle'' and contain ``the result of refinements, stabilization of features and cleanups of the internals of the system along with a few new features''. Attention was given to regression testing: changes were systematically tested by building a selection of the largest Coq projects. Therefore, it is not surprising that these frequent releases are correlated to smaller peaks of new bug reports.
+The highest peak is in 2015, after the first beta release of version
+8.5. This was the first release in more than two years and it
+contained five big new features (``the result of five specific
+long-term projects''\footnote{Quote from
+  \url{https://coq.inria.fr/distrib/V8.9.0/refman/credits.html\#credits-version-8-5}. The
+  next quotes are coming from the following sections of the same
+  chapter of the Coq reference manual.}). Stabilizing these features
+and their (unplanned) interactions required more than a year of
+testing and three beta releases. The 8.5 release was both hard on
+developers, who found the release cycle too long, and on users, who
+were impacted by many compatibility issues. Consequently, a different
+approach was taken for the following releases: versions 8.6, 8.7 and
+8.8 were ``developed on a time-based development cycle'' and contain
+``the result of refinements, stabilization of features and cleanups of
+the internals of the system along with a few new features''. Attention
+was given to regression testing: changes were systematically tested by
+building a selection of the largest Coq projects. Therefore, it is not
+surprising that these frequent releases are correlated to smaller
+peaks of new bug reports.
 
 %IMPORTANT: metre une phrase dans la partie description des variables qui indique qu'on fait 4 semaines pour celui la.
 \begin{figure}
@@ -450,17 +468,13 @@ We provide our extraction and analysis code as a Jupyter notebook and the data w
 %TZ found the research question, prepared and conducted the migration, designed and implemented the data extraction process, implemented the data analyses, and wrote part of the manuscript. AC designed the data processing and analyses, guided the implementation of the data analyses, presented the econometric method in use and wrote part of the manuscript.
 %\paragraph{}
 
-%\noindent\footnotesize{\textbf{Acknowledgements.}}
-%We would like to thank Ambre Williams for valuable advice and help on the design and implementation of the data analyses and C\'ecile Rottner for general advice, support, and proof-reading.
-%We would like to thank Andriy Berestovskyy for providing the Bugzilla import tool, and Martin Michlmayr for doing the first steps in porting our modifications upstream.
+\noindent\footnotesize{\textbf{Acknowledgements.}}
+We would like to thank Ambre Williams for valuable advice and help on the design and implementation of the data analyses and C\'ecile Rottner for general advice, support, and proof-reading.
+We would like to thank Andriy Berestovskyy for providing the Bugzilla import tool, and Martin Michlmayr for doing the first steps in porting our modifications upstream.
 
 %
 % ---- Bibliography ----
-%
-% BibTeX users should specify bibliography style 'splncs04'.
-% References will then be sorted and formatted in the correct style.
-%
-\bibliographystyle{splncs04}
 \bibliography{bib}
+\bibliographystyle{IEEEtran}
 %
 \end{document}
