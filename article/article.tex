@@ -31,16 +31,16 @@ Paris, France}
 \begin{abstract}
 For most software projects, the bug tracker is an essential tool. In open source development, this tool plays an even more central role as it is generally open to all users, who are encouraged to test the software and report bugs. Previous studies have highlighted the act of reporting a bug as a first step leading a user to become an active contributor.
 
-The impact of the bug reporting environment on the bug tracking activity is difficult to assess because of the lack of comparison points. In this paper, we take advantage of the switch, from Bugzilla to GitHub, of the bug tracker of Coq, a medium-sized open source project, to evaluate the impact that such a change can have.
+The impact of the bug reporting environment on the bug tracking activity is difficult to assess because of the lack of comparison points. In this paper, we take advantage of the switch, from Bugzilla to GitHub, of the bug tracker of Coq, a medium-sized open source project, to evaluate and interpret the impact that such a change can have.
 
-We first report on the switch itself, in particular the migration of 4900 preexisting bug reports using the GitHub issue import API. Then we analyze data from before and after the switch using a Regression on Discontinuity analysis, a novel methodology in the context of empirical software engineering.
+We first report on the switch itself, including the migration of preexisting bug reports. Then we analyze data from before and after the switch using a Regression on Discontinuity analysis, a novel methodology in the context of empirical software engineering. We complete this quantitative analysis with qualitative data from interviews with developers.
 We show that the switch induces an increase in bug reporting, particularly from principal developers themselves, and more generally an increased engagement with the bug tracking platform, with more comments by developers and also more external commentators.
 \end{abstract}
 
 %The abstract should briefly summarize the contents of the paper in 15--250 words.
 
 \begin{IEEEkeywords}
-bug tracker, switch, migration, bug report, issue, GitHub, Bugzilla, open source, data mining, Regression on Discontinuity
+bug tracker, switch, migration, bug report, issue, GitHub, Bugzilla, open source, data mining, Regression on Discontinuity, interviews
 \end{IEEEkeywords}
 %
 %
@@ -212,19 +212,19 @@ For the dates of the new releases in Section~\ref{descriptive-stats}, we define 
 
 The companion Jupyter notebook contains an extensive array of descriptive tables and figures, such as the distribution of bug reporting in the year and in the day, graphs of bug reporting for individual developers, etc. We only present a subset of these results.
 
-\subsection{Cumulative number of bug reports and bug comments}
+%\subsection{Cumulative number of bug reports and bug comments}
 
-Fig.~\ref{cumulative_bugs} and~\ref{cumulative_comments} give a first (cumulative) view of two of our outcome variables: the number of bug reports, and the number of comments. From these figures, we can clearly notice the dominance of developers in the number of bug comments and the dominance of non-developers in the number of bug reports. We can also already notice some slope changes at the bug tracker switch date. The magnitude and significance of this changes will be assessed in Sec. \ref{results}.
+%Fig.~\ref{cumulative_bugs} and~\ref{cumulative_comments} give a first (cumulative) view of two of our outcome variables: the number of bug reports, and the number of comments. From these figures, we can clearly notice the dominance of developers in the number of bug comments and the dominance of non-developers in the number of bug reports. We can also already notice some slope changes at the bug tracker switch date. The magnitude and significance of this changes will be assessed in Sec. \ref{results}.
 
-\begin{figure}
-\includegraphics{cumulative_bugs.eps}
-\caption{Cumulative number of bug reports (since 2008).} \label{cumulative_bugs}
-\end{figure}
+%\begin{figure}
+%\includegraphics{cumulative_bugs.eps}
+%\caption{Cumulative number of bug reports (since 2008).} \label{cumulative_bugs}
+%\end{figure}
 
-\begin{figure}
-\includegraphics{cumulative_comments.eps}
-\caption{Cumulative number of comments (since 2008).} \label{cumulative_comments}
-\end{figure}
+%\begin{figure}
+%\includegraphics{cumulative_comments.eps}
+%\caption{Cumulative number of comments (since 2008).} \label{cumulative_comments}
+%\end{figure}
 
 \subsection{Influence of new releases}
 \label{influence_release}
@@ -247,6 +247,16 @@ In Fig.~\ref{comments_with_releases}, we can see that release dates are correlat
 \begin{figure}
 \includegraphics{comments_with_releases.eps}
 \caption{Number of bug comments by 4-week period with release dates (since 2008).} \label{comments_with_releases}
+\end{figure}
+
+\begin{figure}
+\includegraphics{reporters_with_releases.eps}
+\caption{Average number of weekly distinct reporters by 4-week period with release dates (since 2008).} \label{reporters_with_releases}
+\end{figure}
+
+\begin{figure}
+\includegraphics{commentators_with_releases.eps}
+\caption{Average number of weekly distinct commentators by 4-week period with release dates (since 2008).} \label{commentators_with_releases}
 \end{figure}
 
 \section{Methodology}
