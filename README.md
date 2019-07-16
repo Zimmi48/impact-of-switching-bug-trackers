@@ -12,3 +12,5 @@ The LaTeX sources are available in [`article/`](article).
   fetch data from GitHub and analyze the impact of the migration, as well as
   the CSV files that were generated from GitHub data on September 14th, 2018,
   and that were used for the analysis.
+
+  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Zimmi48/impact-of-switching-bug-trackers/master?filepath=analysis%2FGitHub_migration.ipynb)
