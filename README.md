@@ -1,4 +1,7 @@
-# Impact of switching bug trackers: a case study #
+# Impact of switching bug trackers: a case study on a medium-sized open source project #
+
+This is the version of the supplementary materials corresponding to
+the final version of the ICSME'19 paper.
 
 ## Article ##
 
