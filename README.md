@@ -1,7 +1,9 @@
 # Impact of switching bug trackers: a case study on a medium-sized open source project #
 
-This is the version of the supplementary materials corresponding to
-the final version of the ICSME'19 paper.
+The version of the supplementary materials corresponding to the final
+version of the ICSME'19 paper is tagged [`icsme-final`][icsme-tag].
+
+[icsme-tag]: https://github.com/Zimmi48/impact-of-switching-bug-trackers/tree/icsme-final
 
 ## Article ##
 
